@@ -715,8 +715,7 @@ def hasill(c):
 		else:
 			exit()
 def igg():
-	print ("\n%s [%s•%s] Gak usah dikasih apa² ngab "%(P,M,P,M,K))
-	print ("\n%s [%s•%s] Tinggal nama aja, contoh : \x1b[1;92m( jokowi \x1b[1;92m)
+	print ("\n%s [%s•%s] contoh nama %s: %s( jokowi ) "%(P,M,P,M,K))
     usr_ = raw_input('%s [?] Input nama > %s'%(P,K))
 	jumlah = input('%s [?] Limit user > %s'%(P,K))
 	bff_2 = usr_.replace(" ", "")
