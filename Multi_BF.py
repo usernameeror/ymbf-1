@@ -146,15 +146,15 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '\033[0m_____________________________________\n';time.sleep(0.03)
+    print '\033[0m________________________________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) YOUR NAME : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) YOUR IP   : %s'%(IP)
-    print '_____________________________________\n';time.sleep(0.03)
+    print '________________________________________________________\n';time.sleep(0.03)
     print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
     print ' %s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
-    print '_____________________________________\n';time.sleep(0.03)
+    print '_________________________________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id from friends'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id from friends/public'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id from followers'%(O,N);time.sleep(0.03)
