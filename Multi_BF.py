@@ -90,9 +90,9 @@ def tod():
 
 # LO KONTOL
 logo =  ''' \033[0;91m  __  ___     ____  _   ___  ____
-\033[0;91m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0;91m||•Created By Aang-XD
-\033[0;97m / /|_/ / // / / __/ / / _  / _/   \033[0;97m||•Github.com/AngCyber
-\033[0;97m/_/  /_/\_,_/_/\__/_/ /____/_/\033[0;96m v2.9\033[0;97m||•Facebook Saya Aang'''
+\033[0;91m  /  |/  /_ __/ / /_(_) / _ )/ __/\033[0;91m||•Created By Aang-XD
+\033[0;97m / /|_/ / // / / __/ / / _  / _/  \033[0;97m||•Github.com/AngCyber
+\033[0;97m/_/  /_/\_,_/_/\__/_/ /____/_/\033[0;96mv2.9\033[0;97m||•Facebook Saya Aang'''
 
 lo_ngentod = '1714009362122228'
 # crack selesai
@@ -146,15 +146,15 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '\033[0m--------------------------------------------------------\n';time.sleep(0.03)
+    print '\033[0m_____________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) YOUR NAME : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) YOUR IP   : %s'%(IP)
-    print '--------------------------------------------------------\n';time.sleep(0.03)
+    print '_____________________________________\n';time.sleep(0.03)
     print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
     print ' %s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
-    print '--------------------------------------------------------\n';time.sleep(0.03)
+    print '_____________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id from friends'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id from friends/public'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id from followers'%(O,N);time.sleep(0.03)
@@ -164,7 +164,7 @@ def moch_yayan():
     print ' [%s07%s]. View results crack (Lihat Hasil Crack)'%(O,N);time.sleep(0.03)
     print ' [%s08%s]. Setting user agent'%(O,N);time.sleep(0.03)
     print ' [%s09%s]. Info %sScript%s'%(O,N,O,N);time.sleep(0.03)
-    print ' [%s00%s]. Log Out  (%sAhh Ngecrot%s)'%(M,N,M,N);time.sleep(0.03)
+    print ' [%s00%s]. Log Out (%sAhh Ngecrot%s)'%(M,N,M,N);time.sleep(0.03)
     pepek = raw_input('\n [•] menu : ')
     if pepek == '':
         print '\n %s[%s×%s] JANGAN KOSONG KENTOD!!'%(N,M,N);time.sleep(2);moch_yayan()
