@@ -641,7 +641,7 @@ def menu():
     #print ('[%s08%s] Gabung group'%(K,P))
     #print ('[%s09%s] Info script'%(K,P))
     print ('╚═[%s00%s] Keluar (Ahh Ngecrot) '%(M,P))
-    unik = raw_input('\n%s[••] Menu : %s'%(P,K))
+    unik = raw_input('\n%s╠═[••] Menu : %s'%(P,K))
     if unik == '':
         print("%s[!] Isi yang benar kentod "%(M));jeda(2);menu()
     elif unik in['1','01']:
