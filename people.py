@@ -340,7 +340,7 @@ class ngentod:
             ses = requests.Session()
             header = {"user-agent": ua,
             "x-fb-connection-bandwidth": str(random.randint(20000,40000)),
-            "x-fb-sim-hni": str((random.randint(20000,40000)),
+            "x-fb-sim-hni": str(random.randint(20000,40000)),
             "x-fb-net-hni": str(random.randint(20000,40000)),
             "x-fb-connection-quality": "EXCELLENT",
             "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
