@@ -148,10 +148,6 @@ def moch_yayan():
     _mmk_ = open('.cokie.txt').read()
     kueh  = {"cookie":_mmk_}
     try:
-        memek = open('license.txt', 'r').read()
-    except IOError:
-        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
-    try:
     except KeyError:
         #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     print("\n [*] Email      : %s"%(email));time.sleep(0.03)
