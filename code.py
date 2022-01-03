@@ -147,16 +147,6 @@ def moch_yayan():
     IP = requests.get('https://yayanxd.my.id/server/ip').text
     _mmk_ = open('.cokie.txt').read()
     kueh  = {"cookie":_mmk_}
-    try:
-        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
-    print("\n [*] Email      : %s"%(email));time.sleep(0.03)
-    print(" [*] Bergabung  : %s %s %s "%(day,month,year));time.sleep(0.03)
-    print(" [*] ---------------------------------------------");time.sleep(0.03)
-    try:
-        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
-    print(" [*] Premium    : %s"%(tod))
-    print(" [*] Kadaluarsa : %s %s %s"%(day,month,year));time.sleep(0.03)
-    print(" [*] ---------------------------------------------");time.sleep(0.03)
     print(" [*] IP         : %s\n"%(IP));time.sleep(0.03)
     print(" [ selamat datang %s%s%s ]\n"%(K,nama,N));time.sleep(0.03)
     print(' [%s01%s]. Crack id dari anggota grup'%(O,N));time.sleep(0.03)
