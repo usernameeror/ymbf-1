@@ -147,12 +147,12 @@ def moch_yayan():
     IP = requests.get('https://yayanxd.my.id/server/ip').text
     _mmk_ = open('.cokie.txt').read()
     kueh  = {"cookie":_mmk_}
-    print(' [•]--------------------------------------------[•]'%(P)
-    print('  • Code by : Aangxd & Yayanxd'%(O,P)
-    print('  • Team    : XNX-CODE TEAM'%(O,P)
+    print(' [•]--------------------------------------------[•]'%(P))
+    print('  • Code by : Aangxd & Yayanxd'%(O,P))
+    print('  • Team    : XNX-CODE TEAM'%(O,P))
     print(" • You IP   : %s"%(IP));time.sleep(0.03)
     print(" • You Name : %s%s%s\n"%(K,nama,N));time.sleep(0.03)
-    print(' [•]--------------------------------------------[•]'%(P)
+    print(' [•]--------------------------------------------[•]'%(P))
     print(' [%s01%s]. Crack id dari anggota grup'%(O,N));time.sleep(0.03)
     print(' [%s02%s]. Crack id dari teman publik'%(O,N));time.sleep(0.03)
     print(' [%s03%s]. Crack id dari total followers'%(O,N));time.sleep(0.03)
