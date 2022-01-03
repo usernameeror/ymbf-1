@@ -150,7 +150,6 @@ def moch_yayan():
     print(' [•]--------------------------------------------[•]'%(P)
     print('  • Code by : Aangxd & Yayanxd'%(O,P)
     print('  • Team    : XNX-CODE TEAM'%(O,P)
-    print(' [•]--------------------------------------------[•]'%(P)
     print(" • You IP   : %s"%(IP));time.sleep(0.03)
     print(" • You Name : %s%s%s\n"%(K,nama,N));time.sleep(0.03)
     print(' [•]--------------------------------------------[•]'%(P)
