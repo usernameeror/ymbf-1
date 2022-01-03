@@ -152,22 +152,12 @@ def moch_yayan():
     except IOError:
         #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     try:
-        mmk = requests.get("https://ymbf.yayanxd.my.id/chek.php?project=ngetes&apikey="+memek).json()
-        email = mmk['email']
-        bergabung = mmk['joined']
-        day,month,year = bergabung.split(" ")
-        month = bulan_key[month]
     except KeyError:
         #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     print("\n [*] Email      : %s"%(email));time.sleep(0.03)
     print(" [*] Bergabung  : %s %s %s "%(day,month,year));time.sleep(0.03)
     print(" [*] ---------------------------------------------");time.sleep(0.03)
     try:
-        kadaluarsa = mmk['expired']
-        day,month,year = kadaluarsa.split(" ")
-        month = bulan_key[month]
-        tod = mmk['member'].replace("Premium", "\x1b[1;92mYa\x1b[0m").replace("Trial", "\x1b[1;91mTidak\x1b[0m")
-    except (KeyError,IOError):
         #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     print(" [*] Premium    : %s"%(tod))
     print(" [*] Kadaluarsa : %s %s %s"%(day,month,year));time.sleep(0.03)
