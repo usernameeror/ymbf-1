@@ -120,8 +120,8 @@ def yayanxd():
         open('.cokie.txt', 'a').write(cookie)
         open('.token.txt', 'a').write(tokn)
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(tokn)).json()['name']
-        print('\n\n %s*%s selamat datang %s%s%s'%(O,N,K,nama,N));time.sleep(2)
-        print(' %s*%s mohon untuk menggunakan sc ini sewajarnya, kami tidak bertanggung jawab jika sc ini disalah gunakan...'%(O,N));time.sleep(2)
+        print('\n\n %s*%s selamat datang %s%s%s'%(O,N,K,nama,N));time.sleep(1)
+        print(' %s*%s mohon untuk menggunakan sc ini sewajarnya, kami tidak bertanggung jawab jika sc ini disalah gunakan...'%(O,N));time.sleep(1)
         input(' %s*%s tekan enter '%(O,N))
         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
         moch_yayan()
@@ -150,7 +150,7 @@ def moch_yayan():
     try:
         memek = open('license.txt', 'r').read()
     except IOError:
-        print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
+        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     try:
         mmk = requests.get("https://ymbf.yayanxd.my.id/chek.php?project=ngetes&apikey="+memek).json()
         email = mmk['email']
@@ -158,7 +158,7 @@ def moch_yayan():
         day,month,year = bergabung.split(" ")
         month = bulan_key[month]
     except KeyError:
-        print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
+        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     print("\n [*] Email      : %s"%(email));time.sleep(0.03)
     print(" [*] Bergabung  : %s %s %s "%(day,month,year));time.sleep(0.03)
     print(" [*] ---------------------------------------------");time.sleep(0.03)
@@ -168,7 +168,7 @@ def moch_yayan():
         month = bulan_key[month]
         tod = mmk['member'].replace("Premium", "\x1b[1;92mYa\x1b[0m").replace("Trial", "\x1b[1;91mTidak\x1b[0m")
     except (KeyError,IOError):
-        print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
+        #print("\n %s[%s×%s] Lisense invalid"%(N,M,N));os.system('rm -rf license.txt');time.sleep(2);cok()
     print(" [*] Premium    : %s"%(tod))
     print(" [*] Kadaluarsa : %s %s %s"%(day,month,year));time.sleep(0.03)
     print(" [*] ---------------------------------------------");time.sleep(0.03)
