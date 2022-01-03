@@ -147,7 +147,7 @@ def moch_yayan():
     IP = requests.get('https://yayanxd.my.id/server/ip').text
     _mmk_ = open('.cokie.txt').read()
     kueh  = {"cookie":_mmk_}
-    print(" • You IP   : %s\n"%(IP));time.sleep(0.03)
+    print(" • You IP   : \033[0;93m%s"%(IP));time.sleep(0.03)
     print(" • You Name : %s%s%s\n"%(K,nama,N));time.sleep(0.03)
     print(' [%s01%s]. Crack id dari anggota grup'%(O,N));time.sleep(0.03)
     print(' [%s02%s]. Crack id dari teman publik'%(O,N));time.sleep(0.03)
