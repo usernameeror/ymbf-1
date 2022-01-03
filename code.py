@@ -579,68 +579,6 @@ def cek_apk(session,cookie):
     else:
         for i in range(len(game)):
             print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-def cok():
-    os.system("clear")
-    print("%s[*] ADMIN TIDAK BERTANGGUNG JAWAB ATAS PENYALAHGUNAAN TOOLS INI"%(N))
-    print("[*] UNTUK MENDAPATKAN COOKIES GUNAKAN TOOLS COOKIEDOUGH EKSTENSION YANG ADA DI KIWI BROWSER (%sdownload browser kiwi di play store%s)"%(H,N))
-    print("[*] JIKA TIDAK MENGERTI MENGGUNAKAN TOOLS SILAHKAN HUBUNGI ADMIN DENGAN KETIK '%sADMIN%s'"%(H,N))
-    print("[*] JIKA INGIN MENGGUNAKAN FREE USER SILAHKAN HUBUNGI ADMIN UNTUK MENDAPATKAN API KEY GERATIS (%s1 day%s)"%(H,N))
-    print("[*] (ADMIN IS NOT RESPONSIBLE FOR ABUSE OF THIS TOOL)")
-    print("[*] SCRIPT TELAH DI UPATE PADA TANGGAL [Sabtu 27 November 2021]")
-    memek = input("\n[*] masukan api key kamu : ")
-    if memek == '':
-        print("\n[!] jangan kosong bro");time.sleep(2);cok()
-    elif memek in['admin','Admin','ADMIN']:
-        jalan("\n %s* %sAnda akan di alihkan ke whatsapp..."%(O,H));time.sleep(0.02)
-        exit(subprocess.Popen(["am","start","https://wa.me/"+requests.get("https://ymbf.yayanxd.my.id/no.txt").text.strip()+"?text=Hello! saya ingin menggunakan tools Brute"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
-    elif memek in['beli','Beli','BELI']:
-        beli_key()
-    try:
-        kontol = requests.get("https://ymbf.yayanxd.my.id/chek.php?project=ngetes&apikey="+memek).json()
-        kadaluarsa = kontol['expired']
-        nama = kontol["username"]
-        day,month,year = kadaluarsa.split(" ")
-        month = bulan_key[month]
-        open('license.txt', 'w').write(memek)
-        jalan("\n[%s*%s] Hallo %s%s%s apikey anda masih berlaku sampai tanggal: %s%s %s %s%s, silahkan gunakan dengan bijak."%(O,N,H,nama,N,H,day,month,year,N));time.sleep(3)
-        exit("[%s!%s] jalankan ulang perintah nya dengan ketik python run.py"%(M,N))
-    except KeyError:
-        print("\n%s[%s!%s] api key %s%s%s tidak terdaftar di website"%(N,M,N,M,memek,N));time.sleep(2);cok()
-def get_license(integer):
-    lis = list("abcdefghijklmnopqrstuvwxyz123456789")
-    gets = [random.choice(lis) for _ in range(integer)]
-    return "".join(gets).upper()
-def beli_key():
-    os.system("clear")
-    digit = random.choice([20])
-    digit = get_license(digit)
-    logo()
-    print("\n [%s+%s] Your key : %s%s%s"%(O,N,H,digit,N))
-    print("""\n [%s1%s].%s Daftar premium key%s\n [%s2%s].%s Check harga premium%s\n [%s0%s].%s Exit%s"""%(H,N,O,N,H,N,O,N,M,N,M,N))
-    print("%s---------------------------%s>%s>%s>"%(B,M,K,H))
-    pil = input(" %s[%s+%s] choose %s:%s "%(N,O,N,M,H))
-    while pil == "":
-        print("\n %s[%s×%s] jangan kosong bro"%(N,M,N));time.sleep(2);beli_key()
-    if pil == "1":
-        print ("\n %s[%s!%s] Notice me: mana hari isi dengan angka jangan hurup\n"%(N,M,N))
-        hari = input(" %s[%s?%s] mau order berapa hari %s:%s "%(N,M,N,M,H))
-        nama = input(" %s[%s?%s] nama anda  %s:%s "%(N,M,N,M,H))
-        mail = input(" %s[%s?%s] email anda %s:%s "%(N,M,N,M,H))
-        exit(subprocess.Popen(["am","start","https://wa.me/"+requests.get("https://ymbf.yayanxd.my.id/no.txt").text.strip()+"?text=hello admin! tolong konfirmasi kode premium saya.\n* Nama  : "+nama+"\n* EMAIL : "+mail+"\n* KEY     : " +digit+"\n* ORDER : "+hari+"days"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
-    elif pil == "2":
-        cek_harga()
-    elif pil == "0":
-        cok()
-    else:
-        print("\n %s[%s×%s] input yang bener"%(N,M,N));time.sleep(2);beli_key()
-def cek_harga():
-    print ("""
-    %s*%s daftar harga Lisensi %s*%s\n
-  %s>%s pembayaran via dana/pulsa %s<%s\n
- [%s1%s]%s 5K  (5  rb) Sehari%s
- [%s2%s]%s 25K (25 rb) minggu%s
- [%s3%s]%s 50K (50 rb) 1 bulan%s"""%(O,N,O,N,H,N,H,N,O,N,H,N,O,N,H,N,O,N,H,N))
-    input("\n   %s[%s ENTER %s]%s "%(H,O,H,N));beli_key()
 class __crack__:
     def __init__(self):
         self.id = []
