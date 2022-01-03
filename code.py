@@ -131,7 +131,7 @@ def yayanxd():
         print('\n %s[%s×%s] cookies invalid'%(N,M,N));time.sleep(1);yayanxd()
     except requests.exceptions.ConnectionError:
         exit('\n\n %s[%s!%s] tidak ada koneksi\n'%(N,M,N))
-#def moch_yayan():
+def moch_yayan():
     os.system('clear')
     logo()
     try:
@@ -579,7 +579,7 @@ def cek_apk(session,cookie):
     else:
         for i in range(len(game)):
             print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-#def cok():
+def cok():
     os.system("clear")
     print("%s[*] ADMIN TIDAK BERTANGGUNG JAWAB ATAS PENYALAHGUNAAN TOOLS INI"%(N))
     print("[*] UNTUK MENDAPATKAN COOKIES GUNAKAN TOOLS COOKIEDOUGH EKSTENSION YANG ADA DI KIWI BROWSER (%sdownload browser kiwi di play store%s)"%(H,N))
@@ -606,11 +606,11 @@ def cek_apk(session,cookie):
         exit("[%s!%s] jalankan ulang perintah nya dengan ketik python run.py"%(M,N))
     except KeyError:
         print("\n%s[%s!%s] api key %s%s%s tidak terdaftar di website"%(N,M,N,M,memek,N));time.sleep(2);cok()
-#def get_license(integer):
+def get_license(integer):
     lis = list("abcdefghijklmnopqrstuvwxyz123456789")
     gets = [random.choice(lis) for _ in range(integer)]
     return "".join(gets).upper()
-#def beli_key():
+def beli_key():
     os.system("clear")
     digit = random.choice([20])
     digit = get_license(digit)
@@ -633,7 +633,7 @@ def cek_apk(session,cookie):
         cok()
     else:
         print("\n %s[%s×%s] input yang bener"%(N,M,N));time.sleep(2);beli_key()
-#def cek_harga():
+def cek_harga():
     print ("""
     %s*%s daftar harga Lisensi %s*%s\n
   %s>%s pembayaran via dana/pulsa %s<%s\n
