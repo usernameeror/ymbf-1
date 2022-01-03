@@ -62,12 +62,12 @@ def jalan(z):
         time.sleep(0.03)
 def logo():
     print("""%s
- _____.___.            _____ _____________________
- \__  |   |           /     \\______   \_   _____/ ®
-  /   |   |  ______  /  \ /  \|    |  _/|    __)  
-  \____   | /_____/ /    Y    \    |   \|     \   
-  / ______|         \____|__  /______  /\___  /   
-  \/                        \/       \/     \/    """%(N))
+\033[0;92m_____.___.            _____ ____________________
+\033[0;92m\__  |   |           /     \\______   \_   _____/ ®
+ \033[0;92m/   |   |  ______  /  \ /  \|    |  _/|    __)  
+ \033[0;92m\____   | /_____/ /    Y    \    |   \|     \   
+ \033[0;92m/ ______|         \____|__  /______  /\___  /   
+ \033[0;92m\/                        \/       \/     \/    """%(N))
 def hasil(ok,cp):
     if len(ok) != 0 or len(cp) != 0:
         print('\n\n %s[%s#%s] crack selesai...\n'%(N,K,N))
@@ -155,7 +155,7 @@ def moch_yayan():
     print(' [%s04%s]. Crack id dari like postingan'%(O,N));time.sleep(0.03)
     print(' [%s05%s]. Crack id dari random id massal'%(O,N));time.sleep(0.03)
     print(' [%s06%s]. Crack id dari komentar postingan'%(O,N));time.sleep(0.03)
-    print(' [%s07%s]. Crack akun instagram [%snew%s]'%(O,N,H,N));time.sleep(0.03)
+    print(' [%s07%s]. Crack akun instagram [%sBARU%s]'%(O,N,H,N));time.sleep(0.03)
     print(' [%s08%s]. Checkpoint detedtor'%(O,N));time.sleep(0.03)
     print(' [%s09%s]. Settings user agent'%(O,N));time.sleep(0.03)
     print(' [%s10%s]. Check hasil crack'%(O,N));time.sleep(0.03)
